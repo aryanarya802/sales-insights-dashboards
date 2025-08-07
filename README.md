@@ -1,37 +1,47 @@
-# SalesAnalysis_SQL_PowerBI
+# 📊 Sales Analysis using SQL & Power BI
 
-### Setup
-- This project requires SQL Server (SQL Express), Power BI Desktop
-- We will work with backup Data Warehouse (DW) data and Lightweight (LT) data. Obtain data and restore following instructions from [here.](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms)
-- Compare DW and LT data to understand the difference between structured and unstructured data. We will primarily be working with Data Warehouse data.
-- Update Data Warehouse data using [sql script.](https://github.com/techtalkcorner/SampleDemoFiles/blob/master/Database/AdventureWorks/Update_AdventureWorksDW_Data.sql)
+This project involves end-to-end sales data analysis using T-SQL and Power BI. It simulates a real-world business scenario where a Data Warehouse is used to generate insights from structured sales data.
 
-### Business Request & User Stories
-- Read the sample business request, demand overview & filled-out user stories to understand the problem we are trying to solve with Data Analysis and what we consider as a solution.
+---
 
-### Clean the Data using T-SQL
-- Understand the difference between FACT tables & Dimension tables.
-- Identify which tables in the data are of interest with the help of the Business Request form.
-- Choose which columns are of interest to export by preparing and transforming these columns in SQL using concepts such as: renaming columns, combining columns, commenting in SQL script, formatting of SQL statements, WHERE clause, ORDER BY, LEFT JOIN, CASE() function and ISNULL() function. 
+### ⚙️ Setup & Data Preparation
 
-### Create Dashboard in Power BI
-- Load Data
-- Organize & Prepare Tables
-- Connect Tables for Data Model
-- Import Fact_Budget
-- Calculation Measures
-- Dashboard Design
-- Import Custom Visual
-- Measure Table
-- Pie Chart
-- Line Chart
-- Bar Charts
-- Map Graph
-- Top 10 Graphs
-- Gradient Bar Chart Color
-- Customer Details
-- Pivot Table
+- Worked with Data Warehouse (DW) and Lightweight Transactional (LT) data to understand structured vs semi-structured formats.
+- Cleaned and updated DW data using T-SQL queries.
+- Differentiated between Fact and Dimension tables for accurate data modeling.
 
-### Dashboard
-- [Download the file](https://github.com/AsifRashid01/SalesAnalysis_SQL_PowerBI/blob/main/Sales%20Report.pbix) and open in Power BI Desktop for interactive viewing.
-- [See a screenshot](https://github.com/AsifRashid01/SalesAnalysis_SQL_PowerBI/blob/main/Sales%20Report.pdf) of the Dashboard in pdf.
+---
+
+### 📌 Data Cleaning & Transformation (T-SQL)
+
+- Identified relevant tables and columns for analysis based on a business request.
+- Applied SQL transformations using:
+  - Joins (LEFT JOIN)
+  - Filtering (WHERE, ORDER BY)
+  - Column operations (renaming, combining, CASE, ISNULL)
+  - SQL formatting and commenting for clarity
+
+---
+
+### 📈 Power BI Dashboard Creation
+
+- Loaded and transformed data into Power BI
+- Built data model by connecting Fact and Dimension tables
+- Designed an interactive dashboard with:
+  - KPI cards and Budget comparison
+  - Line, Bar, Pie, and Map charts
+  - Top 10 analysis visuals
+  - Slicers and filters for user interaction
+  - Gradient formatting for visual impact
+  - Customer-level drilldowns and Pivot Table integration
+
+---
+
+### 🧰 Tools Used
+
+- Microsoft SQL Server (T-SQL)
+- Power BI Desktop
+
+---
+
+📌 **Note:** This project was created for learning and portfolio purposes using sample sales data.
